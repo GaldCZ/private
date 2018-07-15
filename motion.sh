@@ -8,7 +8,7 @@ find /var/lib/motion/ -mtime -1 -exec cp {} ${slozka} \;
 
 FILES=$(echo /var/www/html/Motion/)
 
-#mpack -s "Motion detection" 01-20160212013900-00.jpg pavelsuha95@gmail.com
+#mpack -s "Motion detection" 01-20160212013900-00.jpg EMAIL
 
-rsync -avz -e 'ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null' ${FILES} gald@192.168.0.100:${FILES}
+rsync -avz -e 'ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null' ${FILES} NAME@IP:${FILES}
 
