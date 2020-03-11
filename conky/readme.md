@@ -1,5 +1,6 @@
 # Conky project
-This is my own Conky project, now running on Ubuntu 19
+This is my own Conky project, now running on Ubuntu 19.
+You should edit .conkyrc file with your interface and wttr curl on your location.
 
 ## Getting Started
 ```
