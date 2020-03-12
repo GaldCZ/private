@@ -4,7 +4,7 @@ You should edit .conkyrc file with your interface and wttr curl on your location
 
 ## Getting Started
 ```
-sudo apt install conky
+sudo apt install conky jq curl
 git clone git@github.com:GaldCZ/private.git
 wget https://raw.githubusercontent.com/GaldCZ/private/master/conky/.conkyrc
 mv .conkyrc /home/USER/
@@ -21,6 +21,7 @@ Name=conky
 Comment[en_US]=
 Comment=
 ....
+#Change the network interface name to yours
 conky &
 ```
 <img src="https://github.com/GaldCZ/private/blob/master/conky/conky.png">
