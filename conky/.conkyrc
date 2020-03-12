@@ -110,5 +110,5 @@ ${top name 6} $alignr ${top pid 6} ${top cpu 6}% ${top mem 6}%
 $hr
 ${texeci 200 curl -s wttr.in/LKLN?0T}
 $hr
-${exec curl -sq http://www.mzcr.cz/dokumenty/koronavirus-2019-ncov-aktualni-data_18455_4122_1.html | grep "hodin)" | sed 's/<p>//g;s/<\/p>//g'}
+${color grey}COVID-19 ČR: $color ${exec curl -sq http://www.mzcr.cz/dokumenty/koronavirus-2019-ncov-aktualni-data_18455_4122_1.html | grep '<p>' | awk 'NR==5' | sed 's/<p>//g;s/<\/p>//g'}
 ]]
